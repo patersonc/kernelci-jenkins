@@ -129,8 +129,10 @@ node("docker && rootfs-trigger") {
                 def step_name = "${i} ${config_name} ${arch} ${rootfs_type}"
                 print(step_name)
 
+                /*
                 builds[step_name] = buildRootfsStep(
                     "rootfs-builder", config_name, arch, rootfs_type)
+                */
 
                 i += 1
             }
