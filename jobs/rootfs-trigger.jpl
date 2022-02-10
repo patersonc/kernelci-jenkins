@@ -96,7 +96,6 @@ node("docker && rootfs-trigger") {
     def kci_core = "${env.WORKSPACE}/kernelci-core"
     def docker_image = "${params.DOCKER_BASE}build-base"
     def configs = []
-    def buildroot_configs = []
 
     print("""\
     Config:    ${params.ROOTFS_CONFIG}
