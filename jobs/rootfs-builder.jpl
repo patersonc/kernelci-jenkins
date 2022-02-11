@@ -47,7 +47,7 @@ import org.kernelci.util.Job
 def build_buildroot(config, arch, pipeline_version, kci_core) {
     dir(kci_core) {
         sh(script: """\
-git clone https://github.com/kernelci/buildroot
+git clone https://github.com/kernelci/buildroot -b staging.kernelci.org
 ./kci_rootfs \
 build \
 --rootfs-config ${config} \
