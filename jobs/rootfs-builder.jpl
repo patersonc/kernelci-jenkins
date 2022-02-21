@@ -51,7 +51,7 @@ def build(config, arch, pipeline_version, kci_core, rootfs_type) {
 build \
 --rootfs-config ${config} \
 --arch ${arch} \
---data-path config/rootfs/${rootfs_type}
+--data-path config/rootfs/${rootfs_type} \
 --output ${pipeline_version}
 """)
     }
